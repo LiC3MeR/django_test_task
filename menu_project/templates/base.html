@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Project{% endblock %}</title>
+</head>
+<body>
+    {% load menu_tags %}
+    {% draw_menu 'main_menu' %}
+
+    {% block content %}{% endblock %}
+</body>
+</html>
